@@ -37,18 +37,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #0A3058;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(28, 171, 80, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(10, 155, 54, 0.911);
   border-radius: 12px;
 }
 
@@ -287,11 +287,12 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 11em !important;
+  padding-left: 6em !important
 }
 
 .img-fluid {
-  width: 100em;
+  width: 18em;
 }
 
 @media (max-width: 767px) {
@@ -364,13 +365,12 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 20px #1D5F35;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #1E803F;
+  box-shadow: 0 0 20px #1D5F35;
 }
 
 .social-icons {

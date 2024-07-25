@@ -27,7 +27,7 @@ function Home() {
                                     options={{
                                         strings: [
                                             "Computer Engineering Student",
-                                            "Junior Back-end Developer",
+                                            "Junior Web Developer",
                                         ],
                                         autoStart: true,
                                         loop: true,
