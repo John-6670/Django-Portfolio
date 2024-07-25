@@ -11,6 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home/Home";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import About from "./About/About";
 
 function App() {
     const [load, upadateLoad] = useState(true);
@@ -30,7 +31,7 @@ function App() {
                 {/*<ScrollToTop />*/}
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    {/*<Route path="/about" element={<About />} />*/}
+                    <Route path="/about" element={<About />} />
                     {/*<Route path="/project" element={<Projects />} />*/}
                     {/*<Route path="/resume" element={<Resume />} />*/}
                     <Route path="*" element={<Navigate to="/"/>} />
