@@ -13,11 +13,11 @@ import {
 import {
     SiRedis,
     SiFirebase,
-    SiNextdotjs,
     SiSolidity,
-    SiPostgresql,
+    SiSqlite
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
+import { BiLogoDjango } from "react-icons/bi"
 
 function TechStack() {
     return (
@@ -44,7 +44,7 @@ function TechStack() {
                 <DiMongodb />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <SiNextdotjs />
+                <SiSqlite />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <DiGit />
@@ -56,7 +56,7 @@ function TechStack() {
                 <SiRedis />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <SiPostgresql />
+                <BiLogoDjango />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <DiPython />
