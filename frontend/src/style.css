@@ -261,17 +261,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #1FD85D;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: #37BF65 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #1E803F !important;
 }
 
 @media (max-width: 767px) {
@@ -288,6 +288,11 @@ button:focus {
 .myAvtar {
   justify-content: center !important;
   padding-top: 9em !important;
+}
+
+.img-fluid {
+  width: 100em;
+  padding-left: 5em;
 }
 
 @media (max-width: 767px) {

@@ -21,7 +21,7 @@ function Home() {
 
                             <h1 className="heading-name">
                                 I'M
-                                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                                <strong className="main-name"> Mohammadmatin Hazrati</strong>
                             </h1>
 
                             <div style={{ padding: 50, textAlign: "left" }}>
@@ -29,6 +29,7 @@ function Home() {
                                     options={{
                                         strings: [
                                             "Computer Engineering Student",
+                                            "Junior Back-end Developer",
                                         ],
                                         autoStart: true,
                                         loop: true,

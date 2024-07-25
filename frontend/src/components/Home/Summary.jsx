@@ -1,9 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa6";
 
 function Home2() {
     return (
@@ -55,28 +56,38 @@ function Home2() {
                         <p>
                             Feel free to <span className="green">connect </span>with me
                         </p>
-                        {/*<ul className="home-about-social-links">*/}
-                        {/*    <li className="social-icons">*/}
-                        {/*        <a*/}
-                        {/*            href="https://github.com/soumyajit4419"*/}
-                        {/*            target="_blank"*/}
-                        {/*            rel="noreferrer"*/}
-                        {/*            className="icon-colour  home-social-icons"*/}
-                        {/*        >*/}
-                        {/*            <AiFillGithub />*/}
-                        {/*        </a>*/}
-                        {/*    </li>*/}
-                        {/*    <li className="social-icons">*/}
-                        {/*        <a*/}
-                        {/*            href="https://www.linkedin.com/in/soumyajit4419/"*/}
-                        {/*            target="_blank"*/}
-                        {/*            rel="noreferrer"*/}
-                        {/*            className="icon-colour  home-social-icons"*/}
-                        {/*        >*/}
-                        {/*            <FaLinkedinIn />*/}
-                        {/*        </a>*/}
-                        {/*    </li>*/}
-                        {/*</ul>*/}
+                        <ul className="home-about-social-links">
+                            <li className="social-icons">
+                                <a
+                                    href="https://github.com/john-6670"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="icon-colour  home-social-icons"
+                                >
+                                    <AiFillGithub />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                    href="https://www.linkedin.com/in/mohammadmatin-h-7b4209216/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="icon-colour  home-social-icons"
+                                >
+                                    <FaLinkedinIn />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                    href="https://t.me/john_6670"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="icon-colour home-social-icons"
+                                >
+                                    <FaTelegram />
+                                </a>
+                            </li>
+                        </ul>
                     </Col>
                 </Row>
             </Container>
