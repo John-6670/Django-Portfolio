@@ -222,6 +222,7 @@ button:focus {
     transform: rotate(0deg);
   }
 }
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -239,7 +240,7 @@ button:focus {
   z-index: -1;
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
-  background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -306,6 +307,7 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  background: var(--image-gradient), url(./Assets/home-about-bg.jpg);
 }
 
 .home-about-description {
@@ -380,7 +382,7 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #198440 !important;
 }
 
 /* --------- */
