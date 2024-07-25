@@ -531,7 +531,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background: url(./Assets/about-bg.jpg) center/cover no-repeat;
+  background-image: var(--image-gradient), url(./Assets/about-bg.jpg);
   color: white !important;
 }
 

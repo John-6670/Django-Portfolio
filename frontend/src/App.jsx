@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home/Home";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import About from "./About/About";
+import About from "./components/About/About";
 
 function App() {
     const [load, upadateLoad] = useState(true);
