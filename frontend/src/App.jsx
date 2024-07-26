@@ -12,6 +12,7 @@ import Home from "./components/Home/Home";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 
 function App() {
     const [load, upadateLoad] = useState(true);
@@ -32,7 +33,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
-                    {/*<Route path="/project" element={<Projects />} />*/}
+                    <Route path="/project" element={<Projects />} />
                     {/*<Route path="/resume" element={<Resume />} />*/}
                     <Route path="*" element={<Navigate to="/"/>} />
                 </Routes>
