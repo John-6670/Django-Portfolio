@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import {FaTelegram} from "react-icons/fa6";
+import "../Styles/Footer.css";
 
 function Footer() {
     const date = new Date();

@@ -9,8 +9,7 @@ import {
     AiOutlineFundProjectionScreen,
     AiOutlineUser,
 } from "react-icons/ai";
-
-import { CgFileDocument } from "react-icons/cg";
+import "../Styles/NavBar.css";
 
 function NavBar() {
     const [expand, updateExpanded] = useState(false);

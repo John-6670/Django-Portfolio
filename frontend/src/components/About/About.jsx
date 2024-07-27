@@ -4,6 +4,7 @@ import TechStack from "./TechStack";
 import AboutCard from "./AboutCard";
 import ToolStack from "./ToolStack";
 import laptopImg from "../../Assets/about.png";
+import "../../Styles/About.css";
 
 function About() {
     return (
