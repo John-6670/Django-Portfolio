@@ -12,6 +12,7 @@
     "react-icons": "^4.8.0",
     "react-parallax-tilt": "^1.7.233",
     "react-pdf": "^9.1.0",
+    "pdfjs-dist": "^4.4.168",
     "react-tsparticles": "^2.12.2",
     "typewriter-effect": "^2.21.0",
     "react": "^18.3.1",
