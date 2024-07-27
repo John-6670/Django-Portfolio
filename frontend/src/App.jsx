@@ -4,7 +4,7 @@ import {
     Route, Routes, Navigate
 } from "react-router-dom";
 import "./Styles/style.css";
-import "./App.css"
+import "./Styles/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home/Home";
 import NavBar from "./components/NavBar";
