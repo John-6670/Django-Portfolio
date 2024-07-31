@@ -10,19 +10,14 @@ function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    getProjects();
+      api
+          .get("projects/")
+          .then((res) => res.data)
+          .then((data) => {
+              setProjects(data);
+          })
+          .catch((err) => alert(err));
   }, []);
-
-  const getProjects = () => {
-    api
-        .get("projects/")
-        .then((res) => res.data)
-        .then((data) => {
-          setProjects(data);
-          console.log(data);
-        })
-        .catch((err) => alert(err));
-  }
 
   return (
     <Container fluid className="project-section">
