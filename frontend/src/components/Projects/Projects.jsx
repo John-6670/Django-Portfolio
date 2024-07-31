@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import hotel from "../../Assets/Projects/Hotel.png";
 import drf from "../../Assets/Projects/DRF.jpg";
 import "../../Styles/Projects.css";
 import api from "../../api";
@@ -36,6 +35,7 @@ function Projects() {
                   title={project.title}
                   description={project.description}
                   ghLink={project.link}
+                  technologies={project.technologies}
                   />
               </Col>
           ))}
