@@ -7,15 +7,15 @@ import {Col} from "react-bootstrap";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Img variant="top" src={props.imgPath} alt={props.alt} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
         {props.technologies.map((tech) => (
-          <Col xs={1} md={1}>
-            {tech}
+          <Col xs={2} md={7}>
+            {tech.name}
           </Col>
         ))}
         <Button variant="success" href={props.ghLink} target="_blank">

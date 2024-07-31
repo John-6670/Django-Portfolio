@@ -15,4 +15,3 @@ class ProjectViewSet(viewsets.ModelViewSet):
         else:
             self.permission_classes = [permissions.IsAuthenticatedOrReadOnly,]
         return super(ProjectViewSet, self).get_permissions()
-

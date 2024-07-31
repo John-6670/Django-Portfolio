@@ -14,6 +14,7 @@ function Projects() {
           .then((res) => res.data)
           .then((data) => {
               setProjects(data);
+              console.log(data)
           })
           .catch((err) => alert(err));
   }, []);
@@ -31,7 +32,8 @@ function Projects() {
           {projects.map((project) => (
               <Col md={4} className="project-card" key={project.id}>
                 <ProjectCard
-                  imgPath={drf}
+                  imgPath={project.images[0].image}
+                  alt={`${project.title} image`}
                   title={project.title}
                   description={project.description}
                   ghLink={project.link}
