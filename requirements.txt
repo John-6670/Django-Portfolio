@@ -2,3 +2,4 @@ Django
 djangorestframework
 pillow
 python-dotenv
+django-cors-headers
