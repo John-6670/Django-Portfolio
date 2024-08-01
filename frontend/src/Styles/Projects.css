@@ -38,3 +38,34 @@
   padding-top: 10px !important;
   text-align: center !important;
 }
+
+.tech-card {
+  font-size: 0.8em !important;
+  margin: 5px !important;
+  padding: 7px !important;
+  opacity: 0.93 !important;
+  border: 1px solid rgba(222, 249, 196, 0.637) !important;
+  /*vertical-align: middle !important;*/
+  /*text-align: center !important;*/
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  /*overflow: hidden !important;*/
+  transition: all 0.4s ease 0s !important;
+}
+
+.tech-card {
+  font-size: 0.8em;
+  margin: 5px;
+  padding: 7px;
+  opacity: 0.93;
+  border: 1px solid rgba(222, 249, 196, 0.637);
+  border-radius: 5px;
+  display: table;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+}
+
+.tech-card:hover {
+  transform: scale(1.05) !important;
+  border: 1px solid rgba(3, 201, 136, 0.883) !important;
+}

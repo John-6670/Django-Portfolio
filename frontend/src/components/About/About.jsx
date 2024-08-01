@@ -3,8 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import TechStack from "./TechStack";
 import AboutCard from "./AboutCard";
 import ToolStack from "./ToolStack";
-import laptopImg from "../../Assets/about.png";
 import "../../Styles/About.css";
+import CodingLottie from "./Lottie";
+import animationData from "../../lottie/coding.json";
 
 function About() {
     return (
@@ -26,10 +27,12 @@ function About() {
                     </Col>
                     <Col
                         md={5}
-                        style={{paddingTop: "120px", paddingBottom: "50px"}}
+                        style={{padding: "2em"}}
                         className="about-img"
                     >
-                        <img src={laptopImg} alt="about" className="img-fluid"/>
+                        <Col lg="6">
+                            <CodingLottie animationData={animationData} height={530} width={550}/>
+                        </Col>
                     </Col>
                 </Row>
                 <h1 className="project-heading">

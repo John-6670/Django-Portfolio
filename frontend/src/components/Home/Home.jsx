@@ -3,6 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Summary from "./Summary";
 import Typewriter from "typewriter-effect";
 import "../../Styles/Home.css";
+import CodingLottie from "../About/Lottie";
+import animationData from "../../lottie/programmer.json";
 
 function Home() {
     return (
@@ -36,6 +38,15 @@ function Home() {
                                     }}
                                 />
                             </div>
+                        </Col>
+                        <Col
+                            md={5}
+                            style={{paddingBottom: "1em"}}
+                            className="about-img"
+                        >
+                          <Col lg="6">
+                              <CodingLottie animationData={animationData} height={360} width={500}/>
+                          </Col>
                         </Col>
                     </Row>
                 </Container>
