@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Django-Portfolio/static/css/main.e14ebe00.css",
-    "main.js": "/Django-Portfolio/static/js/main.205d7729.js",
+    "main.js": "/Django-Portfolio/static/js/main.6333e43e.js",
     "static/media/Hotel.png": "/Django-Portfolio/static/media/Hotel.b06d0ff0f27887fae3b0.png",
     "static/media/logo.png": "/Django-Portfolio/static/media/logo.5698a5276cf217870f2c.png",
     "static/media/avatar.png": "/Django-Portfolio/static/media/avatar.f65abd68d4bc5d14e0e6.png",
@@ -9,10 +9,10 @@
     "static/media/background.jpg": "/Django-Portfolio/static/media/background.ab557a0db0fb353195fe.jpg",
     "index.html": "/Django-Portfolio/index.html",
     "main.e14ebe00.css.map": "/Django-Portfolio/static/css/main.e14ebe00.css.map",
-    "main.205d7729.js.map": "/Django-Portfolio/static/js/main.205d7729.js.map"
+    "main.6333e43e.js.map": "/Django-Portfolio/static/js/main.6333e43e.js.map"
   },
   "entrypoints": [
     "static/css/main.e14ebe00.css",
-    "static/js/main.205d7729.js"
+    "static/js/main.6333e43e.js"
   ]
 }
