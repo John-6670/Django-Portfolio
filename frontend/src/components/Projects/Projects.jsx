@@ -23,6 +23,7 @@ function Projects() {
               description="This is a Django REST API project under development that provides functionalities for users to interact
               with posts and comments. I'm working on improving the features and functionalities."
               ghLink="https://github.com/John-6670/SimpleSocialApp"
+              technologies={['Python', 'Django', 'Django Rest Framework', 'SQLite']}
             />
           </Col>
 
@@ -34,6 +35,7 @@ function Projects() {
               This system facilitates the management of hotel activities including room booking, guest management, staff management, and report generation.
               It is built using Java and Maven, ensuring a robust and scalable application. "
               ghLink="https://github.com/John-6670/HotelManagementSystem"
+              technologies={['Java', 'JavaFX', 'SQLite', 'FontAwsomeFX', 'ORMLite', 'CSS']}
             />
           </Col>
 
@@ -44,6 +46,7 @@ function Projects() {
               description="This project provides a user-friendly RESTful API for managing your notes.
               Perfect for creating personal note-taking applications or integrating notes into other projects."
               ghLink="https://github.com/John-6670/Django-RestApi"
+              technologies={['Python', 'Django', 'Django Rest Framework', 'SQLite']}
             />
           </Col>
         </Row>
