@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import drf from "../../Assets/Projects/DRF.jpg";
 import "../../Styles/Projects.css";
 import api from "../../api";
 
