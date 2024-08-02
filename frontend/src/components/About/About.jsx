@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TechStack from "./TechStack";
 import AboutCard from "./AboutCard";
@@ -8,6 +8,12 @@ import CodingLottie from "./Lottie";
 import animationData from "../../lottie/coding.json";
 
 function About() {
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        setWidth(window.innerWidth);
+    }, []);
+
     return (
         <Container fluid className="about-section">
             <Container>
@@ -31,7 +37,7 @@ function About() {
                         className="about-img"
                     >
                         <Col lg="6">
-                            <CodingLottie animationData={animationData} height={530} width={550}/>
+                            <CodingLottie animationData={animationData} height={width < 390 ? 285 : 530} width={width < 390 ? 300 : 550} />
                         </Col>
                     </Col>
                 </Row>

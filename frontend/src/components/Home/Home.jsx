@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Summary from "./Summary";
 import Typewriter from "typewriter-effect";
@@ -7,6 +7,13 @@ import CodingLottie from "../About/Lottie";
 import animationData from "../../lottie/programmer.json";
 
 function Home() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    console.log(width);
+  }, []);
+
     return (
         <section>
             <Container fluid className="home-section" id="home">
@@ -45,7 +52,7 @@ function Home() {
                             className="about-img"
                         >
                           <Col lg="6">
-                              <CodingLottie animationData={animationData} height={360} width={500}/>
+                              <CodingLottie animationData={animationData} height={width < 400 ? 250 : 350} width={width < 400 ? 350 : 500} />
                           </Col>
                         </Col>
                     </Row>

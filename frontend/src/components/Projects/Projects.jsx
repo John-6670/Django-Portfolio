@@ -15,7 +15,7 @@ function Projects() {
               setProjects(data);
               console.log(data)
           })
-          .catch((err) => alert(err));
+          .catch((err) => alert('At this moment cannot fetch data from server'));
   }, []);
 
   return (
