@@ -18,10 +18,10 @@ function App() {
             <div className="App">
                 <NavBar />
                 <Routes>
-                    <Route path="/Django-Portfolio" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/project" element={<Projects />} />
-                    <Route path="*" element={<Navigate to="/Django-Portfolio"/>} />
+                    <Route path="*" element={<Navigate to="/"/>} />
                 </Routes>
                 <Footer />
             </div>
