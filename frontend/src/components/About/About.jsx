@@ -4,7 +4,7 @@ import TechStack from "./TechStack";
 import AboutCard from "./AboutCard";
 import ToolStack from "./ToolStack";
 import "../../Styles/About.css";
-import CodingLottie from "./Lottie";
+import CodingLottie from "../Lottie";
 import animationData from "../../lottie/coding.json";
 
 function About() {

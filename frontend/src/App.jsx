@@ -11,6 +11,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
+import NotFound from "./components/NotFount/NotFound";
 
 function App() {
     return (
@@ -18,10 +19,10 @@ function App() {
             <div className="App">
                 <NavBar />
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/Django-Portfolio" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/project" element={<Projects />} />
-                    <Route path="*" element={<Navigate to="/"/>} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
                 <Footer />
             </div>

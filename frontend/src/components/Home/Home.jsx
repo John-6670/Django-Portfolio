@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Summary from "./Summary";
 import Typewriter from "typewriter-effect";
 import "../../Styles/Home.css";
-import CodingLottie from "../About/Lottie";
+import CodingLottie from "../Lottie";
 import animationData from "../../lottie/programmer.json";
 
 function Home() {
