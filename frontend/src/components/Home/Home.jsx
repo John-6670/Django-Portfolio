@@ -11,7 +11,6 @@ function Home() {
 
   useEffect(() => {
     setWidth(window.innerWidth);
-    console.log(width);
   }, []);
 
     return (
