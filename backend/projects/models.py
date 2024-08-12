@@ -24,7 +24,15 @@ class Project(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
     technologies = models.ManyToManyField(Technology)
-    image = models.ImageField(upload_to='projects/images/')
+    link = models.URLField(blank=True)
 
     def __str__(self):
         return self.title
+
+
+class ProjectImage(models.Model):
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='images')
+    image = models.ImageField(upload_to='projects/images/')
+
+    def __str__(self):
+        return f'{self.project.title} Image'
