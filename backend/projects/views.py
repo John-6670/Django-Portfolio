@@ -1,4 +1,4 @@
-from rest_framework import viewsets, permissions
+from rest_framework import viewsets, permissions, generics
 
 from .models import Project
 from .serializers import ProjectSerializer
@@ -15,3 +15,8 @@ class ProjectViewSet(viewsets.ModelViewSet):
         else:
             self.permission_classes = [permissions.IsAuthenticatedOrReadOnly,]
         return super(ProjectViewSet, self).get_permissions()
+
+
+class Test(generics.ListCreateAPIView):
+    queryset = Project.objects.all()
+    serializer_class = ProjectSerializer
