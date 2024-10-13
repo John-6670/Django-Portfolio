@@ -15,6 +15,7 @@
     "react-icons": "^4.8.0",
     "react-lottie": "^1.2.4",
     "react-parallax-tilt": "^1.7.233",
+    "react-responsive": "^10.0.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.12.2",
