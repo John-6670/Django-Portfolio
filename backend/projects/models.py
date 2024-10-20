@@ -25,6 +25,8 @@ class Project(models.Model):
     description = models.TextField()
     technologies = models.ManyToManyField(Technology)
     link = models.URLField(blank=True)
+    start_date = models.DateField(null=True, blank=True)
+    end_date = models.DateField(null=True, blank=True)
 
     def __str__(self):
         return self.title

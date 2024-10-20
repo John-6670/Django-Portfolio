@@ -10,10 +10,10 @@ class ProjectImageInline(admin.TabularInline):
 
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ['title', 'link']
+    list_display = ['title', 'link', 'start_date', 'end_date']
     inlines = [ProjectImageInline]
     search_fields = ['title', 'description']
-    list_filter = ['technologies']
+    list_filter = ['technologies', 'start_date', 'end_date']
 
 
 class TechnologyAdmin(admin.ModelAdmin):

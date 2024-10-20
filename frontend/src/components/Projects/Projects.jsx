@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import "../../Styles/Projects.css";
@@ -8,14 +8,19 @@ function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-      api
-          .get("projects/")
-          .then((res) => res.data)
-          .then((data) => {
-              setProjects(data);
-              console.log(data)
-          })
-          // .catch((err) => alert('At this moment cannot fetch data from server'));
+      const cachedProjects = localStorage.getItem('projects');
+      if (cachedProjects) {
+          setProjects(JSON.parse(cachedProjects));
+      } else {
+          api
+            .get("projects/")
+            .then((res) => res.data)
+            .then((data) => {
+                setProjects(data);
+                localStorage.setItem('projects', JSON.stringify(data));
+            })
+            .catch((err) => alert('Just wait a bit more for the projects to load!'));
+      }
   }, []);
 
   return (
