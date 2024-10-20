@@ -21,6 +21,9 @@ function ProjectCards(props) {
             </Col>
           ))}
         </Row>
+        <p>
+          {props.startDate} - {props.endDate}
+        </p>
         <Button variant="success" href={props.ghLink} target="_blank" style={{marginTop: '20px'}}>
           <BsGithub /> &nbsp;
           GitHub

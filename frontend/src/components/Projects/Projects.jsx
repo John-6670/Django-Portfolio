@@ -42,6 +42,8 @@ function Projects() {
                   description={project.description}
                   ghLink={project.link}
                   technologies={project.technologies}
+                  startDate={project.start_date}
+                  endDate={project.end_date}
                   />
               </Col>
           ))}
