@@ -16,10 +16,26 @@ function Projects() {
             .get("projects/")
             .then((res) => res.data)
             .then((data) => {
-                setProjects(data);
-                localStorage.setItem('projects', JSON.stringify(data));
+                const updatedProjects = data.map(project => {
+                    const startDate = new Date(project.start_date.replace(/-/g, '/'));
+                    project.start_date = startDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
+                    const endDate = new Date(project.end_date.replace(/-/g, '/'));
+                    const currentDate = new Date();
+                    const oneWeekAgo = new Date();
+                    oneWeekAgo.setDate(currentDate.getDate() - 7);
+
+                    if (endDate >= oneWeekAgo && endDate <= currentDate) {
+                        project.end_date = 'now';
+                    } else {
+                        project.end_date = endDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+                    }
+                    return project;
+                });
+                setProjects(updatedProjects);
+                localStorage.setItem('projects', JSON.stringify(updatedProjects));
+                console.log(updatedProjects);
             })
-            .catch((err) => alert('Just wait a bit more for the projects to load!'));
       }
   }, []);
 
