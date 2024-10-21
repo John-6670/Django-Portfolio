@@ -18,7 +18,7 @@ function Projects() {
             .then((data) => {
                 const updatedProjects = data.map(project => {
                     const startDate = new Date(project.start_date.replace(/-/g, '/'));
-                    project.start_date = startDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+                    project.start_date = startDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 
                     const endDate = new Date(project.end_date.replace(/-/g, '/'));
                     const currentDate = new Date();
@@ -26,15 +26,14 @@ function Projects() {
                     oneWeekAgo.setDate(currentDate.getDate() - 7);
 
                     if (endDate >= oneWeekAgo && endDate <= currentDate) {
-                        project.end_date = 'now';
+                        project.end_date = 'Present';
                     } else {
-                        project.end_date = endDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+                        project.end_date = endDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
                     }
                     return project;
                 });
                 setProjects(updatedProjects);
                 localStorage.setItem('projects', JSON.stringify(updatedProjects));
-                console.log(updatedProjects);
             })
       }
   }, []);
