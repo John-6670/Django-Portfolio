@@ -1,0 +1,71 @@
+.project-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background: var(--image-gradient), var(--section-background) !important;
+}
+
+.project-card {
+  padding: 50px 25px !important;
+  height: auto !important;
+}
+
+.project-card-view {
+  box-shadow: 0 4px 5px 3px rgba(3, 201, 136, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(13, 210, 144, 0.561) !important;
+}
+
+.card-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+}
+
+.project-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  text-align: center !important;
+}
+
+.tech-card {
+  font-size: 0.8em !important;
+  margin: 5px !important;
+  padding: 7px !important;
+  opacity: 0.93 !important;
+  border: 1px solid rgba(222, 249, 196, 0.637) !important;
+  /*vertical-align: middle !important;*/
+  /*text-align: center !important;*/
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  /*overflow: hidden !important;*/
+  transition: all 0.4s ease 0s !important;
+}
+
+.tech-card {
+  font-size: 0.8em;
+  margin: 5px;
+  padding: 7px;
+  opacity: 0.93;
+  border: 1px solid rgba(222, 249, 196, 0.637);
+  border-radius: 5px;
+  display: table;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+}
+
+.tech-card:hover {
+  transform: scale(1.05) !important;
+  border: 1px solid rgba(3, 201, 136, 0.883) !important;
+}
