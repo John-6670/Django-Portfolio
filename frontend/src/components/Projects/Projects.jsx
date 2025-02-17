@@ -8,7 +8,7 @@ function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-      const cachedProjects = localStorage.getItem('projects');
+      const cachedProjects = sessionStorage.getItem('projects');
       if (cachedProjects) {
           setProjects(JSON.parse(cachedProjects));
       } else {
@@ -17,23 +17,26 @@ function Projects() {
             .then((res) => res.data)
             .then((data) => {
                 const updatedProjects = data.map(project => {
-                    const startDate = new Date(project.start_date.replace(/-/g, '/'));
-                    project.start_date = startDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+                    if (project.start_date) {
+                        const startDate = new Date(project.start_date.replace(/-/g, '/'));
+                        project.start_date = startDate.toLocaleDateString('en-US', {month: 'short', year: 'numeric'});
+                    }
+                    if (project.end_date) {
+                        const endDate = new Date(project.end_date.replace(/-/g, '/'));
+                        const currentDate = new Date();
+                        const oneWeekAgo = new Date();
+                        oneWeekAgo.setDate(currentDate.getDate() - 7);
 
-                    const endDate = new Date(project.end_date.replace(/-/g, '/'));
-                    const currentDate = new Date();
-                    const oneWeekAgo = new Date();
-                    oneWeekAgo.setDate(currentDate.getDate() - 7);
-
-                    if (endDate >= oneWeekAgo && endDate <= currentDate) {
-                        project.end_date = 'Present';
-                    } else {
-                        project.end_date = endDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+                        if (endDate >= oneWeekAgo && endDate <= currentDate) {
+                            project.end_date = 'Present';
+                        } else {
+                            project.end_date = endDate.toLocaleDateString('en-US', {month: 'short', year: 'numeric'});
+                        }
                     }
                     return project;
                 });
                 setProjects(updatedProjects);
-                localStorage.setItem('projects', JSON.stringify(updatedProjects));
+                sessionStorage.setItem('projects', JSON.stringify(updatedProjects));
             })
       }
   }, []);
