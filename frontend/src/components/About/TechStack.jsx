@@ -3,10 +3,12 @@ import { Col, Row } from "react-bootstrap";
 import {
     SiSqlite, SiNumpy, SiPandas,
     SiHtml5, SiCss3, SiDjango,
-    SiPython
+    SiPython, SiMongodb
 } from "react-icons/si";
 import { IoLogoJavascript  } from "react-icons/io";
 import { FaReact, FaJava } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { DiRedis } from "react-icons/di";
 
 function TechStack() {
     return (
@@ -25,6 +27,15 @@ function TechStack() {
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <SiSqlite />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+                <BiLogoPostgresql />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+                <SiMongodb />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+                <DiRedis />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <SiPython />
